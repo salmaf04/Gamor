@@ -1,0 +1,167 @@
+
+html, body {
+    height: 130%;
+    width: 100%;
+    background-color:rgb(235, 234, 229);
+  }
+
+.navbar{
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color:rgb(235, 234, 229);
+    color: black;
+    border-radius: 2%;
+}
+
+
+.button{
+    color: rgb(109, 102, 102);
+}
+.button:hover {
+    color: blueviolet; /* Color del texto al pasar el ratón por encima */
+}
+
+.gamor{
+    color: black;
+    
+    font-size:200%;
+}
+
+
+.primarybutton{
+    padding: 10px 10px; /* Espacio alrededor del texto */
+    text-align: center; /* Centra el texto */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+   
+}
+
+.createbutton{
+    border-radius: 20px;
+    background-color: rgb(1, 26, 46); /* Define el borde */
+    color: white;
+    font-weight: 600;
+}
+
+.textbutton{
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    
+}
+
+.signinbutton{ 
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */ 
+}
+
+.mainbord{
+
+    position: relative;
+    top: 5%;
+    left: 5%;
+    right: 5%;
+    
+    height: 70%;
+    width: 85%;
+    border-radius: 2%;
+    background-color: rgba(255, 250, 250, 0.877);
+    color: black;
+   
+
+}
+
+.principal{
+    display: flex;
+    height: 50%;
+    width: 100%;
+    border-radius: 2%;
+    
+
+    
+}
+
+.first{
+    padding-top: 8%;
+    padding-left: 1%;
+    width: 33%;
+    height: 100%;
+    border-radius: 2%;
+
+
+}
+.secundarybutton{
+    font-size: 200%;
+    position: relative;
+    left: 20%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 520;
+}
+.streaming{
+    color: orangered;
+}
+
+.textdiv{
+    position: relative;
+    top: 20%;
+    left:8%;
+    font-weight: 500;
+    color: rgb(109, 102, 102);
+}
+
+.carruseltext {
+    position: relative;
+  }
+  
+  .textoCarrusel {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+.seconddiv{
+    height: 10%;
+    position: relative;
+    top: 30%;
+    padding-left: 22%;
+    display: flex;
+    align-items: center;
+}
+
+.createbutton2{
+    border-radius: 20px;
+    font-weight: 600;
+    border-color: aliceblue;
+    background-color: rgb(242, 246, 250);
+
+}
+
+.anuncio{
+    width: 34%;
+}
+
+.carrusel { 
+    position: relative; 
+  } 
+   
+  .imagenCarrusel { 
+    display: none; 
+    width: 100%; 
+    height: 50%; 
+  } 
+   
+  .imagenCarrusel img { 
+    width: 100%; 
+    height: 253%; 
+  } 
+
+
+
+@media (prefers-color-scheme: dark) {
+    .body {
+      background-color: rgba(0, 0, 0, 0.342);
+    }
+  }
+
