@@ -2,11 +2,13 @@
 <html> 
 <head> 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
     <title>Gamor</title> 
 </head> 
 <body> 
     
+    <!--Navbar-->
     <div class="navbar">
 
         <div>
@@ -21,11 +23,13 @@
         </div>
         
         <div>
-            <button class="textbutton signinbutton" href="registro.html">Sing in</button>
+            <button  class="textbutton signinbutton authButton" href="registro.html">Sing in</button>
             <button class="primarybutton createbutton" href="login.html">Create Account</button>   
         </div>
 
     </div>
+
+<!--Main Board-->
 <div class="mainbord">
 
     <div class="principal">
@@ -37,6 +41,7 @@
             <button  style="display: block;" class="textbutton secundarybutton">games</button>
             <button  style="display: block;" class="textbutton secundarybutton">differently</button>
 
+            <!--Textos sobre la aplicación-->
             <div class="carruseltext textdiv">
                 <div class="textoCarrusel">
                   <p> gamor now has stream party platform</p>
@@ -48,12 +53,13 @@
                 
               </div>
 
+            <!--Botones Sign in y Create Account dento del Main Board-->
             <div class="seconddiv">
                 <button class="primarybutton createbutton2">Create Acount</button>
-                <button class="textbutton signinbutton" href="registro.html">Sing in</button>
+                <button class="textbutton signinbutton authButton" href="registro.html">Sing in</button>
             </div>
         </div>
-
+        <!--Anuncios de juegos que saldrán próximamente-->
         <div class="carrusel anuncio"> 
             <div class="imagenCarrusel"> 
               <img src="fortnite cl.png" alt="Descripción de la imagen 1"> 
@@ -65,10 +71,77 @@
                 <img src="F1 cl.jpg" alt="Descripción de la imagen 2"> 
               </div> 
             
-          </div> 
+        </div> 
 
+        <div class="searchdiv">
+
+            <h3 class="text">01. Choose Platform</h3>
+
+            <div class="thirddiv">
+                <button class=" threebuttons buttoncolor">Party</button>
+                <button class=" threebuttons buttoncolor">Matchs</button>
+                <button class=" threebuttons buttoncolor">Streams</button>
+            </div>
+
+            <h3 class="text search">02. Searching Game</h2>
+
+            <div class="warzone">
+                <h4>COD Warzone</h4>
+                <i class="fas fa-sliders-h" onclick="toggleFilters()"></i>
+
+                <!-- Menú de filtros -->
+                <div id="filters" class="filters">
+                    <!-- Filtros de género -->
+                    <h3>Gender</h3>
+                    <input type="checkbox" id="sports" name="genre" value="Sports">
+                    <label for="sports"> Sports</label><br>
+                    <input type="checkbox" id="fashion" name="genre" value="Fashion">
+                    <label for="fashion"> Fashion</label><br>
+                    <input type="checkbox" id="adventure" name="genre" value="Adventure">
+                    <label for="adventure"> Adventure</label><br>
+                    
+
+                    <!-- Filtros de edad -->
+                    <h3>Edge</h3>
+                    <input type="checkbox" id="children" name="age" value="Children">
+                    <label for="children"> Children</label><br>
+                    <input type="checkbox" id="teenager" name="age" value="Teenager">
+                    <label for="teenager"> Teenager</label><br>
+                    <input type="checkbox" id="adults" name="age" value="Adults">
+                    <label for="adults"> Adults</label><br>
+                    <input type="checkbox" id="everyone" name="age" value="Everyone">
+                    <label for="everyone"> Everyone</label><br>
+
+                    <!-- Filtros de jugadores -->
+                    <h3>Players</h3>
+                    <input type="checkbox" id="onePlayer" name="players" value="One Player">
+                    <label for="onePlayer"> One Player</label><br>
+                    <input type="checkbox" id="multiplayer" name="players" value="Multiplayer">
+                    <label for="multiplayer"> Multiplayer</label><br>
+
+                    <!-- Filtros de categoría -->
+                    <h3>Payment</h3>
+                    <input type="checkbox" id="free" name="category" value="Free">
+                    <label for="free"> Free</label><br>
+                    <input type="checkbox" id="payment" name="category" value="Payment">
+                    <label for="payment"> Payment</label><br>
+                </div>
+            </div>
+
+            <div class="gamelist">
+                <table id="gameList" class="table" >
+                    <!-- Los juegos se añadirán aquí -->
+                </table>
+            </div>
+
+            <button class="searchbutton primarybutton"onclick="searchGame()">Search Game</button>
+
+        </div>
     </div>
-    
+  
+    <div class="Categoriesdiv">
+        <span class="trending">Trending Categories</span>
+      </div>
 
 </div>
 <script src="main.js"></script>

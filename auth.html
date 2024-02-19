@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <link rel="stylesheet" href="authstyle.css">
+    </head>
+    <title>Gamor Sign in</title>
+    <body>
+        <div>
+            <h1>Walcome to Gamor</h1>
+            <form action="procesar.php" method="post">
+                <!-- Agregamos un campo para el nombre de usuario -->
+                <div class="campo">
+                    <label for="usuario">User Name:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu nombre de usuario" required>
+                </div>
+                <!-- Agregamos un campo para la contraseña -->
+                <div class="campo">
+                    <label for="contraseña">Password:</label>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Ingresa tu contraseña" required>
+                    <h6>
+                        <span class="text">Forgot password</span>
+                        <span class="text space">Don't have an account yet</span>
+                    </h6>
+                </div>
+                <!-- Agregamos un botón para enviar el formulario -->
+                <div class="boton">
+                    <button class="primarybutton" type="submit" >Sign in</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

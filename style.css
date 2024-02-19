@@ -21,8 +21,9 @@ html, body {
 .button{
     color: rgb(109, 102, 102);
 }
+/* Color del texto al pasar el mouse por encima */
 .button:hover {
-    color: blueviolet; /* Color del texto al pasar el ratón por encima */
+    color: blueviolet; 
 }
 
 .gamor{
@@ -33,15 +34,15 @@ html, body {
 
 
 .primarybutton{
-    padding: 10px 10px; /* Espacio alrededor del texto */
-    text-align: center; /* Centra el texto */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    padding: 10px 10px; 
+    text-align: center; 
+    cursor: pointer; 
    
 }
 
 .createbutton{
     border-radius: 20px;
-    background-color: rgb(1, 26, 46); /* Define el borde */
+    background-color: rgb(1, 26, 46); 
     color: white;
     font-weight: 600;
 }
@@ -54,11 +55,12 @@ html, body {
 }
 
 .signinbutton{ 
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */ 
+    cursor: pointer; 
 }
 
 .mainbord{
-
+    display: flex;
+    flex-direction: column;
     position: relative;
     top: 5%;
     left: 5%;
@@ -67,7 +69,7 @@ html, body {
     height: 70%;
     width: 85%;
     border-radius: 2%;
-    background-color: rgba(255, 250, 250, 0.877);
+    background-color:whitesmoke;
     color: black;
    
 
@@ -134,7 +136,7 @@ html, body {
     border-radius: 20px;
     font-weight: 600;
     border-color: aliceblue;
-    background-color: rgb(242, 246, 250);
+    background-color: whitesmoke;
 
 }
 
@@ -157,6 +159,109 @@ html, body {
     height: 253%; 
   } 
 
+  .searchdiv{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7%;
+  }
+
+  .thirddiv{
+    
+    position: relative;
+    top: 2%;
+    
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 250, 250, 0.877);
+    
+  }
+
+  .threebuttons{
+    
+    font-weight: 500;
+    border-color:rgba(255, 250, 250, 0.877);
+    
+  }
+
+  .buttoncolor{
+    color: rgb(109, 102, 102);
+    border: none;
+    background-color: transparent;
+    
+}
+
+.buttoncolor:hover{
+    background-color: rgb(187, 190, 194);
+    color: black;
+    border-radius: 20px;
+}
+
+.text{
+    font-weight: 100;
+    position: relative;
+    
+}
+
+.search{
+    position: relative;
+    top: 5%;
+}
+
+.warzone{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgba(255, 250, 250, 0.877);
+    position: relative;
+    top:5%;
+    height: 7%;
+    width: 160%;
+}
+
+.gamelist{
+    
+    height: 100%;
+    width: 160%;
+    background-color:rgba(255, 250, 250, 0.877);
+    overflow-y: auto;
+}
+
+.table{
+    font-weight: 550;
+}
+
+.searchbutton{
+    position: relative;
+    top: 27%;
+    width: 160%;
+    
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: 300;
+}
+.filters{
+    display: none;
+    position: relative;
+    
+    width: 30%;
+    height: 100%;
+}
+
+.Categoriesdiv{
+    position: relative;
+    top: 17%;
+    left: 8%;
+    
+}
+
+.trending{
+    font-weight: 700;
+}
 
 
 @media (prefers-color-scheme: dark) {

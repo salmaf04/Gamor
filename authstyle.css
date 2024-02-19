@@ -1,0 +1,72 @@
+html, body{
+    background-color:rgb(235, 234, 229);
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos del formulario */
+form {
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    left: 25%;
+    z-index: 1;
+    width: 50%;
+}
+
+/* Estilos de los campos */
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Estilos de las etiquetas */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilos de los inputs */
+input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    outline: none;
+}
+
+/* Estilos del botón */
+.boton {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos del botón al pasar el cursor */
+button {
+    background-color:black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.text{
+    color: #a3a2a2;
+}
+
+.space{
+    position: relative;
+    left: 5%;
+}
